@@ -21,6 +21,7 @@ var place = [];
 var choix = 0 ; nbim2 = 0; nbim3 = 0;
 var choixim = 1;
 var gain = 0;
+var cpt=0;
 var divs=nbc/2;
 var nb = nbc+1;
 
