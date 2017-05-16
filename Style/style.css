@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Friz Quadrata", serif;
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTZ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    font-family: "Friz Quadrata", serif;
+    font-size: larger;
+}
+html, body {
+    background-image: url("../img/summonersrift.jpg");
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Friz Quadrata", serif;
+    color: #F2A61A;
+
+}
+.aff{
+    background-image: url('../img/header-bg.png');
+    padding: 3px;
+    margin: 5px;
+    height: 222px;
+    width: 1191px;
+    display: inline-block;
+
+
+    background-position: center;
+}
+
+
+tbody{
+    display: inline-block;
+    vertical-align: bottom;
+}
+    .biliboard.electronic {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+    #win{
+        background-image: url("../img/Victory.png");
+    }
+    #lose{
+        background-image: url("../img/Defeat.png");
+    }
+
+
+
+@keyframes electronic {
+
+
+    0%, 100% {
+        background-position: 20px -30px;
+    }
+    25% {
+        background-position: 150px 5px;
+    }
+    50% {
+        background-position: 20px 40px;
+    }
+    75% {
+        background-position: -100px 5px;
+    }
+
+}
+
+.biliboard {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    color: #333;
+    font: 13px open, tahoma;
+}
+.biliboard:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    transform: scale( 1.02, 1.08 );
+    position: absolute;
+    background: #f00;
+    background: linear-gradient( 90deg, #fafafa, #fafafa, #1D8EF7, #fafafa, #fafafa );
+    background-position: 55px 0;
+    top: 0;
+    animation: linear 1s infinite linear;
+    left: 0;
+    z-index: -1;
+}
+
+.biliboard.radial:before {
+    background: radial-gradient( #fafafa, #fafafa, #F2A61A, #fafafa, #fafafa );
+    animation: radial 1s infinite linear;
+}
+
+.biliboard.repeating:before {
+    background: repeating-linear-gradient( -45deg, #fafafa, #fafafa 30px, #5FC914 30px, #5FC914 60px ) fixed;
+    animation: repeating 1s infinite linear;
+}
+
+.biliboard.electronic:before {
+    background: radial-gradient( #EA238D, #EA238D, #EA238D, #EA238D, #fafafa, #fafafa ) no-repeat;
+    background-size: auto;
+    animation: electronic 2s infinite linear;
+}
